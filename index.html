@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumbung Sari</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;0,900;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">LumbungSari.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#location">Kontak</a>
+        <a href="#berita">Berita</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Rest Area Lumbung Sari <span>Desa Sukosari</span></h1>
+        <p>
+          Istirahatkan jiwa Anda, nikmati pelukan alam di Rest Area Lumbung
+          Sari, Desa Sukosari.
+        </p>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <h2>Tentang Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/gambar-about-section.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Apa itu Lumbung Sari?</h3>
+          <p>
+            Selamat datang di Rest Area Lumbung Sari, sebuah rest area yang
+            menjadi bagian dari program pemberdayaan desa yang didanai oleh Dana
+            Desa Sukosari. Tujuan utama kami adalah meningkatkan perekonomian
+            masyarakat melalui kegiatan jual beli yang beragam. Di Lumbung Sari,
+            Anda akan menemukan keindahan kolam renang yang menakjubkan, area
+            santai yang nyaman, kolam pemancingan, serta fasilitas toilet umum
+            yang bersih.
+          </p>
+          <p>
+            Selain itu, disini kami juga menawarkan wisata kolam yang menarik
+            dan menjadi pusat kegiatan masyarakat Desa Sukosari. Kami
+            menyediakan area parkir yang luas, toilet yang nyaman, serta
+            berbagai permainan di kolam renang. Dengan harga tiket yang
+            terjangkau, Anda dapat menikmati berbagai acara dan kegiatan yang
+            kami adakan, baik siang maupun malam. Selamat menikmati pengalaman
+            di Lumbungsari, yang buka selama 24 jam setiap harinya!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Galeri Section Start -->
+    <section class="galeri" id="galeri">
+      <h2>Galeri Kami</h2>
+
+      <div class="row">
+        <div class="galeri-card">
+          <img
+            src="img/gambar1.jpg"
+            alt="galeri ke 1"
+            class="galeri-img"
+            onclick="openModal('img/gambar1.jpg')"
+          />
+          <img
+            src="img/gambar2.jpg"
+            alt="galeri ke 2"
+            class="galeri-img"
+            onclick="openModal('img/gambar2.jpg')"
+          />
+          <img
+            src="img/gambar3.jpg"
+            alt="galeri ke 3"
+            class="galeri-img"
+            onclick="openModal('img/gambar3.jpg')"
+          />
+          <img
+            src="img/gambar4.jpg"
+            alt="galeri ke 4"
+            class="galeri-img"
+            onclick="openModal('img/gambar4.jpg')"
+          />
+          <img
+            src="img/gambar5.jpg"
+            alt="galeri ke 5"
+            class="galeri-img"
+            onclick="openModal('img/gambar5.jpg')"
+          />
+          <img
+            src="img/gambar6.jpg"
+            alt="galeri ke 6"
+            class="galeri-img"
+            onclick="openModal('img/gambar6.jpg')"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Galeri Section End -->
+
+    <!-- Modal Start-->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImg" class="modal-content" />
+    </div>
+    <!-- Modal Start-->
+
+    <!-- Lokasi Section Start -->
+    <section class="location" id="location">
+      <h2>Kontak Kami</h2>
+      <div class="container">
+        <div class="row">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d554.0215746011752!2d112.30059632084932!3d-7.77571201073398!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1689370635943!5m2!1sid!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contact">
+            <ul>
+              <li>
+                <i data-feather="user" class="feather"></i>Pak Marmin</li>
+              <li>
+                <i data-feather="phone" class="feather"></i>
+                <a href="https://wa.me/+6281252897373">+6281252897373</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Lokasi Section End -->
+
+    <!-- Berita Section Start -->
+    <section class="berita" id="berita">
+      <div class="container">
+        <h2>Berita Terkini</h2>
+        <div class="row">
+          <div class="berita-item">
+            <img src="img/poster-1.jpeg" alt="Berita 1" />
+            <div class="berita-content">
+              <h3>Lomba Memancing Malam Senin</h3>
+              <p>
+                Rasakan keajaiban mancing di Kolam Wisata Kendedes! Ikuti Lomba
+                Mancing Lele yang seru dan dapatkan kesempatan untuk menangkap
+                ikan lele albino yang langka. Tiket terjangkau hanya 20 ribu.
+                Segera datang pada Minggu malam, 23 Juli 2023 di Tempat Rest
+                Area Lumbung Sari, Desa Sukosari, Kecamatan Kasembon. Jangan
+                lewatkan kesempatan ini dan rasakan sensasi tak terlupakan dalam
+                mancing lele albino!
+              </p>
+            </div>
+          </div>
+          <!-- <div class="berita-item">
+            <img src="img/poster-2.jpeg" alt="Berita 2" />
+            <div class="berita-content">
+              <h3>Lomba Memancing Malam Senin</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusantium deserunt eaque eum ullam consequatur vel nesciunt
+                maiores voluptatibus at ratione?
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- Berita Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#location">Kontak</a>
+        <a href="#berita">Berita</a>
+      </div>
+      <div class="credit">
+        <p>
+          Created by
+          <a href="https://www.instagram.com/mmd_ub_279_sukosari/"
+            >MMD279UBSukosari</a
+          >. | &copy; 2023;
+        </p>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
